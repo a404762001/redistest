@@ -61,6 +61,7 @@ public class PhoneNumberController {
         String countkey = "user:"+phone+":code";
         String redisCode = redisService.get(countkey);
         if (redisCode == null) {
+            System.out.println("111");
             return "验证码已过期，请重新获取验证码";
         }
         if (redisCode.equals(code)) {
