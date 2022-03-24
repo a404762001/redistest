@@ -65,6 +65,7 @@ public class PhoneNumberController {
             System.out.println("2222");
             System.out.println("33333");
             System.out.println("44444");
+            System.out.println("555555");
             return "验证码已过期，请重新获取验证码";
         }
         if (redisCode.equals(code)) {
